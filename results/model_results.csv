@@ -1,7 +1,7 @@
 Model,Best Params,CV F1 (Weighted),CV Std,Test Accuracy,Test F1
 Random Forest,"{'model__n_estimators': 300, 'model__min_samples_split': 2, 'model__min_samples_leaf': 1, 'model__max_features': 'sqrt', 'model__max_depth': 20}",0.9362682815036575,0.0041836749312265265,0.9455782312925171,0.9455726342165695
 Extra Trees,"{'model__n_estimators': 300, 'model__min_samples_split': 2, 'model__min_samples_leaf': 1, 'model__max_features': 'log2', 'model__max_depth': None}",0.9386996402065018,0.010126153244475475,0.9433106575963719,0.9432943300207948
-XGBoost,"{'model__colsample_bytree': np.float64(0.9938760186438185), 'model__learning_rate': np.float64(0.045944446396932154), 'model__max_depth': 6, 'model__n_estimators': 230, 'model__subsample': np.float64(0.9065983548417311)}",0.9426027584399186,0.008070880344514576,0.935374149659864,0.9353729035240328
+XGBoost,"{'model__colsample_bytree': np.float64(0.7060655192320977), 'model__learning_rate': np.float64(0.0932619845547938), 'model__max_depth': 5, 'model__n_estimators': 199, 'model__subsample': np.float64(0.939747569265017)}",0.9406597394461258,0.011250033880145142,0.9410430839002267,0.9410412649627864
 KNN,"{'model__weights': 'distance', 'model__p': 1, 'model__n_neighbors': 9}",0.9172713309487927,0.013268627588079252,0.9160997732426304,0.9160211891033603
 Decision Tree,"{'model__min_samples_split': 10, 'model__min_samples_leaf': 2, 'model__max_depth': 20, 'model__criterion': 'entropy'}",0.9036844457312554,0.016352063930890448,0.8888888888888888,0.888885460891405
 Logistic Regression,"{'model__solver': 'lbfgs', 'model__C': 100}",0.8523496003404804,0.012802587114455848,0.8537414965986394,0.853409314870113

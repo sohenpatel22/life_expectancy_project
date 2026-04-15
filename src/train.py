@@ -61,7 +61,7 @@ def tune_model(model, param_dist, X_train, y_train, use_scaler=True):
         n_iter=25,  # key control (not full grid)
         cv=cv,
         scoring="f1_weighted",
-        n_jobs=1,
+        n_jobs=-1,
         random_state=0
     )
 
@@ -126,7 +126,7 @@ def main():
                 eval_metric="logloss",
                 random_state=0,
                 verbosity=0,
-                n_jobs=1
+                n_jobs=-1
             ),
             {
                 "n_estimators": randint(100, 400),
